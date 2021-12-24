@@ -1,4 +1,4 @@
-def resh(z, i, a):
+def G_go_top(z, i, a):  # не использовать транслит!!!
     for j in range(0, i):
         flag_B=True
         for k in range(len(a) - 1):
@@ -14,7 +14,7 @@ def resh(z, i, a):
 def main():
     z, i = map(int, input().split())
     a = list(input())
-    resh(z, i, a)
+    G_go_top(z, i, a)
 
 
 if __name__ == '__main__':
