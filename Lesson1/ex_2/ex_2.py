@@ -6,7 +6,7 @@ def pal(i):
 
 
 def main():
-    word = input('Введите слово: ').lower()
+    word = input().lower()
     pal(word)
 
 

@@ -10,7 +10,7 @@ def simbol(i):
 
 
 def main():
-    word = input('Введите слово: ').lower()
+    word = input().lower()
     simbol(word)
 
 
