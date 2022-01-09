@@ -29,8 +29,15 @@ def timeoutdistbetween(koorddict, base, dist, gap):
         lat_norm = cos((radians(koorddict[key][0]) + lat0) / 2)
         meters = r_met * hypot(d_lon * lat_norm, d_lat)
         if meters <= dist:
+            """
+            Для обработки времени с учётом утраченых данных стоит смотреть на время
+            пересечения границы заданной области
+            
+            В данном примере учёта испорченые/утраченые данные не учитываюся
+            """
             time += gap
     return time
+
 
 def reformdata(i):
     deg = int(i // 100)
